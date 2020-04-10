@@ -6,17 +6,17 @@ import { FormGroup } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
-    templateUrl: `./template-driven.html`
+    templateUrl: `./app.component.html`
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data: any;
     public editSettings: EditSettingsModel;
     public toolbar: ToolbarItems[];
-    public orderData: object;
+    public orderData: any;
     public orderForm: FormGroup;
-    public shipCityDistinctData: object[];
-    public shipCountryDistinctData: object[];
+    public shipCityDistinctData: any;
+    public shipCountryDistinctData: any;
 
     ngOnInit(): void {
         this.data = data;
